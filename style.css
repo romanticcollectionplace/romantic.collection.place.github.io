@@ -19,7 +19,6 @@ body {
 
 .container {
     background-color: #f8f8f8;
-    width: 100%;
     max-width: 800px;
 }
 
@@ -61,10 +60,10 @@ main {
 
 #poem-text {
     font-family: "Noto Serif", serif;
-    font-size:16px;
+    font-size: 16px;
     color: #000;
     white-space: pre-wrap;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-top: 40px;
 }
 
@@ -75,7 +74,6 @@ nav {
 }
 
 .nav-btn {
-    width: 165px;
     padding: 10px 20px;
     font-size: 16px;
     background-color: #333;
@@ -93,4 +91,29 @@ nav {
 
 .nav-btn.hidden {
     visibility: hidden;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #poem-container {
+        max-width: none;
+    }
+
+    #poem-title {
+        font-size: 18px;
+    }
+
+    #poem-subtitle {
+        font-size: 16px;
+    }
+
+    #poem-text {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .nav-btn {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
 }
